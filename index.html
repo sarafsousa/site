@@ -53,6 +53,12 @@
         }
 
         .name {
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
             top: 75%;
             font-family: "Poppins", sans-serif;
             font-size: 20px;
@@ -71,6 +77,25 @@
 
             transform: rotate(-28deg);
         }
+
+
+        @media (max-width: 768px) {
+            .center-text {
+                font-size: 14px;
+                left: 43%;
+            }
+
+            .name {
+                font-size: 8px;
+                right: 40% !important;
+            }
+
+            .phone-time {
+                font-size: 12px;
+                top: 48%;
+                right: 20%;
+            }
+        }
     </style>
 </head>
 
@@ -88,7 +113,7 @@
             blending-illustration-and-<br>
             web-design-experiences
         </div>
-        <div class="center-text name">Sara Sousa</div>
+        <div class="name">Sara Sousa</div>
 
         <div id="clock" class="phone-time">12:16</div>
     </div>
